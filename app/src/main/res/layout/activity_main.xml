@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5AD6C"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Email..."
+        android:inputType="textPersonName"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <Button
+        android:id="@+id/signInButton"
+        style="@android:style/Widget.Holo.TabWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#8F6E01"
+        android:fontFamily="cursive"
+        android:onClick="signInClicked"
+        android:stateListAnimator="@android:anim/fade_in"
+        android:text="Sign in"
+        android:textColor="#16474C"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+         />
+
+    <Button
+        android:id="@+id/signUpButton"
+        style="@android:style/Widget.Holo.TabWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#8F6E01"
+        android:fontFamily="cursive"
+        android:onClick="signUpClicked"
+        android:stateListAnimator="@android:anim/fade_in"
+        android:text="Sign up"
+        android:textColor="#16474C"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
